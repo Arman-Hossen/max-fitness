@@ -3,14 +3,15 @@ import React from 'react';
 const Exercise = (props) => {
     const { name, picture, about, age, time} = props.exercise;
     return (
-        <div className='col-4'>
-            <div className='card' style={{width :"18rem"}}>
+        <div className='col-lg-4 col-sm-12'>
+            <div className='card ' style={{width :"18rem"}}>
             <img src={picture} className='card-img-top h-50' alt="..."/>
             <div className='card-body'>
-                <h5 className='card-title'>Name:{name}</h5>
-                {/* <p className='card-text'>{about}</p> */}
-                <p className='card-text'>{about.slice(0,170)}</p>
-                <a href="/" class="btn btn-primary">Go somewhere</a>
+                <h5 className='card-title'>{name}</h5>
+                <p className='card-text'>{about.slice(0,110)+'...'}</p>
+                <h6 className='card-title'>For Age :{age}</h6>
+                <h6 className='card-title'>Time required :{time}</h6>
+                <a href="/" class="btn btn-primary w-100">Add to list</a>
             </div>
             </div>
                         
