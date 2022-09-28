@@ -32,7 +32,7 @@ const Gymdata = () => {
 
             </div>
             <div className='col-lg-3 col-sm-12 border'>
-                <h4>Profile</h4>
+               
                 <List list={list} ></List>
                 
                 

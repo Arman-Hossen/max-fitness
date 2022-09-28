@@ -11,8 +11,6 @@ const Exercise = (props) => {
                 <p className='card-text'>{about.slice(0,110)+'...'}</p>
                 <h6 className='card-title'>For Age :{age}</h6>
                 <h6 className='card-title'>Time required :{time}</h6>
-                {/* <a href="/" class="btn btn-primary w-100" onClick={() => props.handleAddToList(props.exercise)}>Add to list</a> */}
-                {/* <a href="/" className='btn btn-primary w-100' onClick={() => props.handleAddToList(props.exercise)}>Add to list</a> */}
                 <button className='btn btn-primary w-100' onClick={() => props.handleAddToList(props.exercise)}>Add to list</button>
             </div>
             </div>
