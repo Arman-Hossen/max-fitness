@@ -11,7 +11,7 @@ const Toast = () => {
   return (
     <div>
       <button className="btn btn-primary w-100" onClick={diffToast}>
-        {" "}
+        
         Activity Completed
       </button>
 

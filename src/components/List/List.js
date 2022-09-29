@@ -1,10 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocation } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../images/profile.ico";
 import Toast from "../Toast/Toast";
+import BreakTime from "../BreakTime/BreakTime";
 
 const List = (props) => {
+  const [click, setClick] = useState([]);
   const { list } = props;
   let totalTime = 0;
   for (const item of list) {
@@ -12,12 +14,23 @@ const List = (props) => {
 
     console.log(totalTime);
   }
+  const button =[10, 20, 30, 40, 50];
+  const [button1, button2, button3, button4, button5] = button;
+  
+  
+  const AddToDb = (button) => {
+    setClick(button);
+    console.log(setClick);
+    localStorage.setItem('breakTime', button);
+    const newClick = [...click, button];
+     setClick(newClick);
+        
+    
+   
+    // const newList = [...list, exercise];
+    // setList(newList);
+  };
 
-  const button1 = 10;
-  const button2 = 20;
-  const button3 = 30;
-  const button4 = 40;
-  const button5 = 50;
 
   return (
     <div>
@@ -76,19 +89,19 @@ const List = (props) => {
       <h4 className="mt-5">Add A Break </h4>
 
       <div className="d-flex justify-content-evenly">
-        <button className="btn btn-light text-primary border rounded-circle p-3">
+        <button className="btn btn-light text-primary border rounded-circle p-3 " onClick={() => AddToDb(button1)}>
           {button1}s
         </button>
-        <button className="btn btn-light text-primary border rounded-circle p-3">
+        <button className="btn btn-light text-primary border rounded-circle p-3" onClick={() => AddToDb(button2)}>
           {button2}s
         </button>
-        <button className="btn btn-light text-primary border rounded-circle p-3">
+        <button className="btn btn-light text-primary border rounded-circle p-3" onClick={() => AddToDb(button3)}>
           {button3}s
         </button>
-        <button className="btn btn-light text-primary border rounded-circle p-3">
+        <button className="btn btn-light text-primary border rounded-circle p-3" onClick={() => AddToDb(button4)}>
           {button4}s
         </button>
-        <button className="btn btn-light text-primary border rounded-circle p-3">
+        <button className="btn btn-light text-primary border rounded-circle p-3" onClick={() => AddToDb(button5)}>
           {button5}s
         </button>
       </div>
@@ -97,9 +110,8 @@ const List = (props) => {
       <h6 className="bg-light border rounded-3 p-3">
         Exercise time: {totalTime}s
       </h6>
-      <h6 className="bg-light border rounded-3 p-3 mt-4">
-        Break time: {totalTime}s
-      </h6>
+       
+      <BreakTime></BreakTime>
       <div className="mt-5">
         <Toast></Toast>
       </div>
