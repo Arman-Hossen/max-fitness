@@ -4,7 +4,7 @@ const Exercise = (props) => {
     const { name, picture, about, age, time} = props.exercise;
     return (
         <div className='col-lg-4 col-sm-12'>
-            <div className='card ' style={{width :"18rem"}}>
+            <div className='card '>
             <img src={picture} className='card-img-top h-50' alt="..."/>
             <div className='card-body'>
                 <h5 className='card-title'>{name}</h5>

@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import logo from '../../images/profile.ico'
+import Toast from '../Toast/Toast';
 
 const List = (props) => {
     const {list} = props;
@@ -11,6 +12,13 @@ const List = (props) => {
         
          console.log(totalTime)
     }
+    
+    const button1=10;
+    const button2=20;
+    const button3=30;
+    const button4=40;
+    const button5=50;
+
     return (
         <div>
             <div className='d-flex align-items-center mb-2 rounded-2'>
@@ -60,17 +68,20 @@ const List = (props) => {
             <h4 className='mt-5'>Add A Break </h4>
 
             <div className='d-flex justify-content-evenly'>
-            <button className='btn btn-light text-primary border rounded-circle'>10</button>
-            <button className='btn btn-light text-primary border rounded-circle'>20</button>
-            <button className='btn btn-light text-primary border rounded-circle'>30</button>
-            <button className='btn btn-light text-primary border rounded-circle'>40</button>
-            <button className='btn btn-light text-primary border rounded-circle'>50</button>
+            <button className='btn btn-light text-primary border rounded-circle p-3'>{button1}s</button>
+            <button className='btn btn-light text-primary border rounded-circle p-3'>{button2}s</button>
+            <button className='btn btn-light text-primary border rounded-circle p-3'>{button3}s</button>
+            <button className='btn btn-light text-primary border rounded-circle p-3'>{button4}s</button>
+            <button className='btn btn-light text-primary border rounded-circle p-3'>{button5}s</button>
             
             </div>
 
 
             <h4 className='mt-5'>Exercise Details </h4>
             <h6 className='bg-light border rounded-3 p-3'>Exercise time: {totalTime}s</h6>
+            <div className='mt-5'>
+                <Toast></Toast>
+            </div>
             
         </div>
     );
