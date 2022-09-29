@@ -1,3 +1,4 @@
+// load data from local storage 
 import React from 'react';
 
 const BreakTime = (props) => {
@@ -14,8 +15,8 @@ const BreakTime = (props) => {
 
     return (
         <div>
-            <h6 className="bg-light border rounded-3 p-3 mt-4">
-            Break time: {dbItems}s
+            <h6 className=" border rounded-3 p-3 mt-4" style={{backgroundColor : '#E7F1FF'}}>
+            Break time: {dbItems}m
       </h6>
             
         </div>

@@ -1,3 +1,4 @@
+// page for show personal information and  calculation
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocation } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
@@ -24,10 +25,6 @@ const List = (props) => {
     const newClick = [...click, button];
      setClick(newClick);
         
-    
-   
-    // const newList = [...list, exercise];
-    // setList(newList);
   };
 
 
@@ -55,7 +52,7 @@ const List = (props) => {
         </div>
       </div>
 
-      <div className="bg-light border p-3 mb-3 rounded-3">
+      <div className=" border p-3 mb-3 rounded-3 " style={{backgroundColor : '#E7F1FF'}}>
         <div className="d-flex justify-content-evenly ps-1">
           <div className="d-flex">
             <h3>85</h3>
@@ -73,7 +70,7 @@ const List = (props) => {
             </p>
           </div>
         </div>
-        <div className="d-flex justify-content-evenly ">
+        <div className="d-flex justify-content-evenly">
           <div>
             <p>Weight</p>
           </div>
@@ -85,29 +82,29 @@ const List = (props) => {
           </div>
         </div>
       </div>
-      <h4 className="mt-5">Add A Break </h4>
+      <h4 className="mt-5 text-center">Add A Break </h4>
 
       <div className="d-flex justify-content-evenly">
-        <button className="btn btn-light text-primary border rounded-circle p-3 " onClick={() => AddToDb(button1)}>
-          {button1}s
+        <button className="btn btn-light text-dark border rounded-circle p-3 " style={{backgroundColor : '#E7F1FF'}} onClick={() => AddToDb(button1)}>
+          {button1}m
         </button>
-        <button className="btn btn-light text-primary border rounded-circle p-3" onClick={() => AddToDb(button2)}>
-          {button2}s
+        <button className="btn btn-light text-dark border rounded-circle p-3" style={{backgroundColor : '#E7F1FF'}} onClick={() => AddToDb(button2)}>
+          {button2}m
         </button>
-        <button className="btn btn-light text-primary border rounded-circle p-3" onClick={() => AddToDb(button3)}>
-          {button3}s
+        <button className="btn btn-light text-dark border rounded-circle p-3" style={{backgroundColor : '#E7F1FF'}} onClick={() => AddToDb(button3)}>
+          {button3}m
         </button>
-        <button className="btn btn-light text-primary border rounded-circle p-3" onClick={() => AddToDb(button4)}>
-          {button4}s
+        <button className="btn btn-light text-dark border rounded-circle p-3" style={{backgroundColor : '#E7F1FF'}} onClick={() => AddToDb(button4)}>
+          {button4}m
         </button>
-        <button className="btn btn-light text-primary border rounded-circle p-3" onClick={() => AddToDb(button5)}>
-          {button5}s
+        <button className="btn btn-light text-dark border rounded-circle p-3" style={{backgroundColor : '#E7F1FF'}} onClick={() => AddToDb(button5)}>
+          {button5}m
         </button>
       </div>
 
-      <h4 className="mt-5">Exercise Details </h4>
-      <h6 className="bg-light border rounded-3 p-3">
-        Exercise time: {totalTime}s
+      <h4 className="mt-5 text-center">Exercise Details </h4>
+      <h6 className=" border rounded-3 p-3" style={{backgroundColor : "#E7F1FF"}}>
+        Exercise time: {totalTime}m
       </h6>
        
       <BreakTime click={click}></BreakTime>

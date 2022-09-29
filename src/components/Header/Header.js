@@ -1,3 +1,4 @@
+//Navigation Bar
 import React from "react";
 import logo from "../../images/logo.jpg";
 
@@ -14,7 +15,7 @@ const Header = () => {
             className="d-inline-block align-text-top me-3"
           />
 
-          <h2 className="text-primary">Max-Fitness</h2>
+          <h2 className="text-dark">Max-Fitness</h2>
         </a>
       </div>
     </nav>

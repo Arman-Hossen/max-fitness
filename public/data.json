@@ -1,7 +1,7 @@
 [
     {
       "id": "633460c1783d80e46c93daba",
-      "time": 51,
+      "time": 30,
       "picture": "https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGV4ZXJjaXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "age": 40,
       "name": "Running",
@@ -9,7 +9,7 @@
     },
     {
       "id": "633460c13c5411fb28bc9eb4",
-      "time": 38,
+      "time": 10,
       "picture": "https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGV4ZXJjaXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "age": 30,
       "name": "Weight Lifting",
@@ -17,7 +17,7 @@
     },
     {
       "id": "633460c148d21db1ea5875cb",
-      "time": 37,
+      "time": 20,
       "picture": "https://images.unsplash.com/photo-1562771379-eafdca7a02f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fGV4ZXJjaXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "age": 21,
       "name": "Free Hand Exercise",
@@ -25,7 +25,7 @@
     },
     {
       "id": "633460c1bd291d9713721c0d",
-      "time": 37,
+      "time": 12,
       "picture": "https://images.unsplash.com/photo-1616803689943-5601631c7fec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       "age": 37,
       "name": "Pushups",
@@ -33,7 +33,7 @@
     },
     {
       "id": "633460c1b0d21c46cc23d47a",
-      "time": 40,
+      "time": 25,
       "picture": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGV4ZXJjaXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       "age": 23,
       "name": "Dumble",
@@ -41,7 +41,7 @@
     },
     {
       "id": "633460c1407988b45a679f73",
-      "time": 37,
+      "time": 15,
       "picture": "https://images.unsplash.com/photo-1571019613531-fbeaeb790845?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1168&q=80",
       "age": 31,
       "name": "Sit-Up",
@@ -49,7 +49,7 @@
     },
     {
       "id": "633460c19f1efe70559e835b",
-      "time": 41,
+      "time": 30,
       "picture": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZXhlcmNpc2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       "age": 30,
       "name": "Stretching",
