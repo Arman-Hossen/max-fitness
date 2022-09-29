@@ -20,7 +20,6 @@ const List = (props) => {
   
   const AddToDb = (button) => {
     setClick(button);
-    console.log(setClick);
     localStorage.setItem('breakTime', button);
     const newClick = [...click, button];
      setClick(newClick);
@@ -111,7 +110,7 @@ const List = (props) => {
         Exercise time: {totalTime}s
       </h6>
        
-      <BreakTime></BreakTime>
+      <BreakTime click={click}></BreakTime>
       <div className="mt-5">
         <Toast></Toast>
       </div>

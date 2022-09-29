@@ -18,7 +18,7 @@ const Gymdata = () => {
   return (
     <div className="container">
       <div className="row gx-3">
-        <div className="col-lg-9 col-sm-12 ">
+        <div className="col-lg-9 col-md-3 col-sm-12 ">
           <div>
             <h3>Select Your Daily Exercise</h3>
             <div className="row g-3">
@@ -32,7 +32,7 @@ const Gymdata = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-3 col-sm-12 border ">
+        <div className="col-lg-3 col-md-3 col-sm-12 border ">
           <List list={list}></List>
         </div>
       </div>
